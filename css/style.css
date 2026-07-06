@@ -341,8 +341,17 @@ main {
 }
 
 .media-container img,
-.media-container svg {
+.media-container svg,
+.media-container object {
   max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.media-container .inline-svg {
+  width: 100%;
+  max-width: 900px;
   height: auto;
 }
 
