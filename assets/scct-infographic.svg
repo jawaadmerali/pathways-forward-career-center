@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="scct-title scct-desc">
+  <title id="scct-title">Social Cognitive Career Theory Model</title>
+  <desc id="scct-desc">Diagram showing how self-efficacy, outcome expectations, and goals connect to career interests and choices, with environmental supports and barriers.</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f0f5"/>
+      <stop offset="100%" style="stop-color:#f7f9fb"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="800" height="520" fill="url(#bgGrad)" rx="12"/>
+  <text x="400" y="36" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#1a4d6e">Social Cognitive Career Theory (SCCT)</text>
+  <text x="400" y="58" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#5a6c7d">How beliefs, experiences, and support shape your career path</text>
+
+  <!-- Person-centered inputs -->
+  <rect x="40" y="90" width="160" height="70" rx="8" fill="#1a4d6e" filter="url(#shadow)"/>
+  <text x="120" y="120" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#fff">Personal</text>
+  <text x="120" y="140" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#cde0ed">Experiences &amp; Learning</text>
+
+  <rect x="40" y="180" width="160" height="70" rx="8" fill="#2d6a8f" filter="url(#shadow)"/>
+  <text x="120" y="210" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#fff">Self-Efficacy</text>
+  <text x="120" y="230" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#cde0ed">"Can I do this?"</text>
+
+  <rect x="40" y="270" width="160" height="70" rx="8" fill="#2d6a8f" filter="url(#shadow)"/>
+  <text x="120" y="300" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#fff">Outcome</text>
+  <text x="120" y="318" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#fff">Expectations</text>
+  <text x="120" y="334" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#cde0ed">"What will happen?"</text>
+
+  <!-- Arrows left to center -->
+  <path d="M 200 125 L 280 200" stroke="#c45c26" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 200 215 L 280 215" stroke="#c45c26" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 200 305 L 280 250" stroke="#c45c26" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Center: Goals & Interests -->
+  <rect x="280" y="170" width="200" height="100" rx="10" fill="#c45c26" filter="url(#shadow)"/>
+  <text x="380" y="205" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#fff">Career Interests</text>
+  <text x="380" y="225" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#fff">&amp; Goals</text>
+  <text x="380" y="250" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#fde8d8">What excites and motivates you</text>
+
+  <!-- Arrow to choices -->
+  <path d="M 480 220 L 540 220" stroke="#1a4d6e" stroke-width="3" fill="none" marker-end="url(#arrowDark)"/>
+
+  <!-- Career Choices -->
+  <rect x="540" y="175" width="200" height="90" rx="10" fill="#2d7a4f" filter="url(#shadow)"/>
+  <text x="640" y="210" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#fff">Career Choices</text>
+  <text x="640" y="232" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#c8e6d4">Education, training,</text>
+  <text x="640" y="248" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#c8e6d4">and work decisions</text>
+
+  <!-- Environmental factors -->
+  <rect x="200" y="380" width="400" height="100" rx="10" fill="#fff" stroke="#dde4ea" stroke-width="2" filter="url(#shadow)"/>
+  <text x="400" y="410" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#1a4d6e">Environmental Supports &amp; Barriers</text>
+  <text x="280" y="440" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#2d7a4f"> Family encouragement</text>
+  <text x="400" y="440" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#2d7a4f"> School counselors</text>
+  <text x="520" y="440" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#2d7a4f"> Mentors &amp; programs</text>
+  <text x="280" y="462" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#c45c26"> Financial limits</text>
+  <text x="400" y="462" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#c45c26"> Lack of information</text>
+  <text x="520" y="462" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#c45c26"> Stereotypes &amp; bias</text>
+
+  <!-- Arrows from environment -->
+  <path d="M 320 380 L 320 270" stroke="#5a6c7d" stroke-width="1.5" stroke-dasharray="5,4" fill="none"/>
+  <path d="M 480 380 L 480 270" stroke="#5a6c7d" stroke-width="1.5" stroke-dasharray="5,4" fill="none"/>
+
+  <text x="400" y="505" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#5a6c7d" font-style="italic">Original visual based on Lent, Brown, &amp; Hackett (1994, 2000)</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#c45c26"/>
+    </marker>
+    <marker id="arrowDark" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1a4d6e"/>
+    </marker>
+  </defs>
+</svg>
