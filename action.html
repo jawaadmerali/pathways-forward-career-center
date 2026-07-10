@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Action-oriented career planning guidance including timelines, financial literacy, internships, and an interactive checklist for high school students.">
+  <meta name="description" content="Career planning timelines, financial literacy, and an interactive checklist.">
   <title>Take Action | Pathways Forward</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,14 +19,18 @@
           <span class="logo-sub">Career Resource Center</span>
         </div>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="framework.html">Framework</a></li>
           <li><a href="assessment.html">Assessment</a></li>
           <li><a href="explore.html">Explore</a></li>
           <li><a href="action.html">Take Action</a></li>
-          <li><a href="equity.html">Equity &amp; Access</a></li>
+          <li><a href="equity.html">Equity</a></li>
+          <li><a href="community-resources.html">Community</a></li>
           <li><a href="references.html">References</a></li>
         </ul>
       </nav>
@@ -35,124 +39,79 @@
 
   <main id="main-content">
     <div class="page-header">
-      <h1>Action-Oriented Guidance</h1>
-      <p class="subtitle">What do I do next? Practical steps to move from exploration to action</p>
+      <h1>Take Action</h1>
+      <p class="subtitle">Practical next steps from exploration to decision</p>
     </div>
 
-    <p>Exploration without action leads to anxiety, not clarity. This section provides concrete next steps aligned with where you are in high school. Use the timelines, resources, and interactive checklist below to build momentum.</p>
-
     <section class="section-block">
-      <h2>Developmental Career Timeline</h2>
-      <p>Based on Super's (1990) exploration stage and standard school counseling practice, here is what to focus on during your junior and senior years:</p>
+      <h2>Junior &amp; Senior Timeline</h2>
 
       <div class="timeline">
         <div class="timeline-item">
-          <h3>Junior Year — Fall (September–November)</h3>
-          <p>Take the <a href="assessment.html">O*NET Interest Profiler</a>. Meet with your school counselor to discuss results. Begin researching 3–5 career clusters that interest you using the <a href="explore.html">Exploration Tools</a>. Attend college and career fairs.</p>
+          <h3>Junior Year, Fall</h3>
+          <p>Take <a href="assessment.html">career assessments</a> (personality, values, interests). Meet your counselor. Research 3-5 career clusters.</p>
         </div>
         <div class="timeline-item">
-          <h3>Junior Year — Spring (January–May)</h3>
-          <p>Schedule job shadowing or informational interviews in fields of interest. Take the PSAT/SAT or ACT. Research post-secondary options (college, trade school, military, workforce). Begin building your resume. Explore summer internship or volunteer opportunities.</p>
+          <h3>Junior Year, Spring</h3>
+          <p>Job shadow or interview someone in your field. Take the PSAT/SAT or ACT. Build your resume. Find summer opportunities.</p>
         </div>
         <div class="timeline-item">
-          <h3>Senior Year — Fall (September–November)</h3>
-          <p>Finalize your post-secondary plan. Complete college applications or workforce/training program applications. Submit the FAFSA (opens October 1). Apply for scholarships. Request letters of recommendation. Retake standardized tests if needed.</p>
+          <h3>Senior Year, Fall</h3>
+          <p>Finalize your plan. Apply to colleges or programs. Submit FAFSA (opens October 1). Apply for scholarships.</p>
         </div>
         <div class="timeline-item">
-          <h3>Senior Year — Spring (January–May)</h3>
-          <p>Compare financial aid offers. Make your decision by May 1 (National College Decision Day). Complete enrollment steps (deposits, housing, orientation registration). For workforce paths, finalize training program enrollment. Celebrate your progress — you have earned it.</p>
+          <h3>Senior Year, Spring</h3>
+          <p>Compare financial aid offers. Decide by May 1. Complete enrollment or training registration.</p>
         </div>
       </div>
     </section>
 
     <section class="section-block">
-      <h2>Academic &amp; Training Guidance</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>Course Selection Matters</h3>
-          <p>Choose courses that align with your exploratory interests while meeting graduation requirements. If you are considering healthcare, take biology and chemistry. Interested in technology? Enroll in computer science or coding electives. Dual enrollment at a community college can earn you college credit for free or low cost while still in high school.</p>
-        </div>
-        <div class="card">
-          <h3>Standardized Testing Strategy</h3>
-          <p>Most four-year colleges accept SAT or ACT scores. Many schools are now test-optional, meaning you are not required to submit scores. Research the policies of schools you are interested in. Fee waivers are available for low-income students — ask your counselor. Do not let test costs be a barrier.</p>
-        </div>
-        <div class="card">
-          <h3>Alternative Credentials</h3>
-          <p>If you are pursuing workforce or trade pathways, industry certifications (IT, healthcare, welding, etc.) can be earned while in high school through CTE programs. Ask your counselor about Career and Technical Education offerings at your school or regional center.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block">
-      <h2>Financial Literacy Basics</h2>
+      <h2>Financial Basics</h2>
       <div class="card">
-        <p>Financial concerns are one of the biggest barriers for first-generation students (Engle &amp; Tinto, 2008). Understanding these basics reduces anxiety and prevents costly mistakes:</p>
         <ul class="styled-list">
-          <li><strong>FAFSA (Free Application for Federal Student Aid):</strong> Required for federal grants, loans, and work-study. Opens October 1 of your senior year. It is free — never pay a company to file it. Visit <a href="https://studentaid.gov/h/apply-for-aid/fafsa" target="_blank" rel="noopener noreferrer">StudentAid.gov</a>.</li>
-          <li><strong>Grants vs. Loans:</strong> Grants (like the Pell Grant) do not need to be repaid. Loans do. Always accept grants and scholarships first. Borrow only what you need.</li>
-          <li><strong>Net Price, Not Sticker Price:</strong> The published cost of a college is rarely what you actually pay. Use the <a href="https://collegescorecard.ed.gov/" target="_blank" rel="noopener noreferrer">College Scorecard</a> and each school's net price calculator to estimate your real cost after financial aid.</li>
-          <li><strong>Scholarships:</strong> Apply broadly and early. Use <a href="https://bigfuture.collegeboard.org/scholarships" target="_blank" rel="noopener noreferrer">BigFuture Scholarship Search</a> and check with your counselor for local scholarships — local awards often have less competition.</li>
-          <li><strong>Work-Study:</strong> A federal program that provides part-time jobs on campus. Earnings do not count against your financial aid in the following year. A good way to gain experience while covering expenses.</li>
+          <li><strong>FAFSA:</strong> Required for federal aid. Free at <a href="https://studentaid.gov/h/apply-for-aid/fafsa" target="_blank" rel="noopener noreferrer">StudentAid.gov</a>. Opens October 1.</li>
+          <li><strong>Grants vs. loans:</strong> Accept grants and scholarships first. Borrow only what you need.</li>
+          <li><strong>Net price:</strong> Use the <a href="https://collegescorecard.ed.gov/" target="_blank" rel="noopener noreferrer">College Scorecard</a> to estimate real cost after aid.</li>
+          <li><strong>Scholarships:</strong> Apply early. Check local awards through your counselor.</li>
         </ul>
       </div>
     </section>
 
     <section class="section-block">
-      <h2>Internships, Volunteering &amp; Experiential Learning</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>Why Experience Matters</h3>
-          <p>SCCT research shows that personal experiences are the strongest source of self-efficacy (Lent et al., 2000). Reading about a career is not the same as trying it. Even short experiences — a day of job shadowing, a week of volunteering — give you real data to inform your decisions.</p>
-        </div>
-        <div class="card">
-          <h3>Where to Find Opportunities</h3>
-          <ul class="styled-list">
-            <li>Ask your school counselor about local internship programs</li>
-            <li>Volunteer at hospitals, nonprofits, or community organizations related to your interests</li>
-            <li>Search <a href="https://www.volunteermatch.org/" target="_blank" rel="noopener noreferrer">VolunteerMatch.org</a> for local opportunities</li>
-            <li>Apply for summer programs at local colleges (many are free for low-income students)</li>
-            <li>Part-time jobs count — they build skills and professional habits</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block">
-      <h2>Networking &amp; Graduate School Preparation</h2>
+      <h2>Gain Experience</h2>
       <div class="card">
-        <h3>Building Your Network (Yes, as a High School Student)</h3>
-        <p>Networking sounds intimidating, but it simply means building relationships with people who can share knowledge and opportunities. Start here:</p>
         <ul class="styled-list">
-          <li><strong>Informational interviews:</strong> Ask adults in careers that interest you for a 20-minute conversation. Most professionals are happy to talk with motivated students. Your counselor can help you identify contacts.</li>
-          <li><strong>Alumni networks:</strong> Graduates of your high school who attended colleges or entered careers you are considering are valuable resources. Ask your counseling office about alumni mentorship programs.</li>
-          <li><strong>Professional associations:</strong> Many industries have student memberships (e.g., Future Business Leaders of America, HOSA for health careers, SkillsUSA for trades). Joining shows initiative and connects you to competitions and mentors.</li>
-          <li><strong>Thinking ahead to graduate school:</strong> If you are considering careers that require advanced degrees (law, medicine, social work, research), know that your undergraduate major matters less than your GPA, experience, and preparation. Focus on building a strong academic record and relevant experience now.</li>
+          <li>Ask your counselor about internships</li>
+          <li>Volunteer in fields that interest you</li>
+          <li>Search <a href="https://www.volunteermatch.org/" target="_blank" rel="noopener noreferrer">VolunteerMatch.org</a></li>
+          <li>Part-time jobs build skills and habits</li>
         </ul>
       </div>
     </section>
 
     <section class="section-block">
-      <h2>Interactive Career Planning Checklist</h2>
-      <p>Use this checklist to track your progress. Your selections are saved automatically in your browser so you can return anytime.</p>
+      <h2>Planning Checklist</h2>
+      <p class="lead-text">Progress saves automatically in your browser.</p>
 
-      <form id="career-checklist" class="checklist-form" aria-label="Senior year career planning checklist">
+      <form id="career-checklist" class="checklist-form" aria-label="Career planning checklist">
         <fieldset>
-          <legend>Junior Year — Exploration Phase</legend>
+          <legend>Junior Year</legend>
           <div class="checklist-item">
             <input type="checkbox" id="c1" name="c1">
-            <label for="c1">Completed the O*NET Interest Profiler and reviewed results</label>
+            <label for="c1">Completed personality, values, and interest assessments</label>
           </div>
           <div class="checklist-item">
             <input type="checkbox" id="c2" name="c2">
-            <label for="c2">Met with school counselor to discuss career interests</label>
+            <label for="c2">Met with school counselor about career interests</label>
           </div>
           <div class="checklist-item">
             <input type="checkbox" id="c3" name="c3">
-            <label for="c3">Researched at least 3 career clusters using CareerOneStop or BLS</label>
+            <label for="c3">Researched at least 3 career clusters</label>
           </div>
           <div class="checklist-item">
             <input type="checkbox" id="c4" name="c4">
-            <label for="c4">Attended a college fair, career fair, or informational session</label>
+            <label for="c4">Attended a college or career fair</label>
           </div>
           <div class="checklist-item">
             <input type="checkbox" id="c5" name="c5">
@@ -161,14 +120,14 @@
         </fieldset>
 
         <fieldset style="margin-top: 1.5rem;">
-          <legend>Senior Year — Decision &amp; Application Phase</legend>
+          <legend>Senior Year</legend>
           <div class="checklist-item">
             <input type="checkbox" id="c6" name="c6">
-            <label for="c6">Submitted the FAFSA (opens October 1)</label>
+            <label for="c6">Submitted the FAFSA</label>
           </div>
           <div class="checklist-item">
             <input type="checkbox" id="c7" name="c7">
-            <label for="c7">Applied to at least 3 post-secondary options (colleges, programs, or employers)</label>
+            <label for="c7">Applied to at least 3 post-secondary options</label>
           </div>
           <div class="checklist-item">
             <input type="checkbox" id="c8" name="c8">
@@ -176,19 +135,19 @@
           </div>
           <div class="checklist-item">
             <input type="checkbox" id="c9" name="c9">
-            <label for="c9">Completed at least one job shadow, internship, or volunteer experience</label>
+            <label for="c9">Completed a job shadow, internship, or volunteer experience</label>
           </div>
           <div class="checklist-item">
             <input type="checkbox" id="c10" name="c10">
-            <label for="c10">Compared financial aid offers and made an informed decision</label>
+            <label for="c10">Compared financial aid offers and made a decision</label>
           </div>
           <div class="checklist-item">
             <input type="checkbox" id="c11" name="c11">
-            <label for="c11">Identified a mentor or professional contact in my field of interest</label>
+            <label for="c11">Found a mentor in my field of interest</label>
           </div>
           <div class="checklist-item">
             <input type="checkbox" id="c12" name="c12">
-            <label for="c12">Scheduled a final meeting with my counselor to review my plan</label>
+            <label for="c12">Scheduled a final counselor meeting</label>
           </div>
         </fieldset>
 
@@ -197,28 +156,23 @@
           <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
             <div id="progress-fill" class="progress-fill"></div>
           </div>
-          <p id="progress-message">Check off items as you complete them. Your progress is saved automatically.</p>
+          <p id="progress-message">Your progress saves automatically.</p>
           <button type="button" id="reset-checklist" class="btn btn-secondary" style="margin-top: 1rem;">Reset Checklist</button>
         </div>
       </form>
     </section>
 
-    <div class="callout callout-success">
-      <h3>You Have a Plan — Now Keep Going</h3>
-      <p>Career development does not end at graduation. Whether you are heading to college, entering the workforce, joining the military, or taking time to explore, the habits you build now — researching, asking questions, seeking mentors, taking small steps — will serve you throughout your life. Return to this site whenever you need to recalibrate.</p>
-    </div>
-
-    <p><a href="equity.html" class="btn">Continue to Equity &amp; Access →</a></p>
+    <p><a href="equity.html" class="btn">Continue to Equity →</a></p>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <div>
         <p><strong>Pathways Forward Career Center</strong></p>
-        <p>A professional career resource for first-generation high school students.</p>
+        <p>Career planning for first-generation high school students.</p>
       </div>
       <div>
-        <p><a href="references.html">References &amp; Sources</a></p>
+        <p><a href="references.html">References</a></p>
       </div>
     </div>
   </footer>

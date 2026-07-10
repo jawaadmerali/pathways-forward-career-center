@@ -1,10 +1,12 @@
 /**
- * Pathways Forward Career Center — Interactive Features
+ * Pathways Forward Career Center
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initChecklist();
   initActiveNav();
+  initMobileNav();
+  initResourceSearch();
 });
 
 function initChecklist() {
@@ -15,10 +17,8 @@ function initChecklist() {
   const progressFill = document.getElementById('progress-fill');
   const progressText = document.getElementById('progress-text');
   const progressMessage = document.getElementById('progress-message');
-
   const storageKey = 'pathways-forward-checklist';
 
-  // Restore saved state
   const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
   checkboxes.forEach((cb, i) => {
     if (saved[i]) cb.checked = true;
@@ -39,17 +39,17 @@ function initChecklist() {
 
     if (progressMessage) {
       if (percent === 100) {
-        progressMessage.textContent = 'Excellent work! You have completed all action steps. Schedule a meeting with your school counselor to review your plan.';
-        progressMessage.style.color = '#2d7a4f';
+        progressMessage.textContent = 'All steps complete. Meet with your counselor to review your plan.';
+        progressMessage.style.color = '#1f7a4d';
       } else if (percent >= 50) {
-        progressMessage.textContent = 'You are making great progress. Keep going — each step brings you closer to clarity.';
-        progressMessage.style.color = '#1a4d6e';
+        progressMessage.textContent = 'Good progress. Keep going.';
+        progressMessage.style.color = '#1a5578';
       } else if (checked > 0) {
-        progressMessage.textContent = 'Good start! Return to this checklist regularly as you complete each item.';
-        progressMessage.style.color = '#5a6c7d';
+        progressMessage.textContent = 'Good start. Check back as you complete items.';
+        progressMessage.style.color = '#5c6f7f';
       } else {
-        progressMessage.textContent = 'Check off items as you complete them. Your progress is saved automatically.';
-        progressMessage.style.color = '#5a6c7d';
+        progressMessage.textContent = 'Your progress saves automatically.';
+        progressMessage.style.color = '#5c6f7f';
       }
     }
   }
@@ -59,7 +59,7 @@ function initChecklist() {
   const resetBtn = document.getElementById('reset-checklist');
   if (resetBtn) {
     resetBtn.addEventListener('click', () => {
-      if (confirm('Reset all checklist items? This cannot be undone.')) {
+      if (confirm('Reset all checklist items?')) {
         checkboxes.forEach(cb => { cb.checked = false; });
         localStorage.removeItem(storageKey);
         updateProgress();
@@ -76,5 +76,57 @@ function initActiveNav() {
       link.classList.add('active');
       link.setAttribute('aria-current', 'page');
     }
+  });
+}
+
+function initMobileNav() {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+  });
+
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      toggle.setAttribute('aria-expanded', 'false');
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-label', 'Open menu');
+    });
+  });
+}
+
+function initResourceSearch() {
+  const input = document.getElementById('resource-search');
+  if (!input) return;
+
+  const cards = document.querySelectorAll('.provider-card');
+  const sections = document.querySelectorAll('.guide-section');
+  const noResults = document.getElementById('no-results');
+
+  input.addEventListener('input', () => {
+    const query = input.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    sections.forEach(section => {
+      const sectionCards = section.querySelectorAll('.provider-card');
+      let sectionVisible = 0;
+
+      sectionCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        const match = !query || text.includes(query);
+        card.classList.toggle('is-hidden', !match);
+        if (match) sectionVisible++;
+      });
+
+      section.classList.toggle('is-hidden', sectionVisible === 0);
+      visibleCount += sectionVisible;
+    });
+
+    if (noResults) noResults.hidden = visibleCount > 0 || !query;
   });
 }

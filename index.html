@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pathways Forward Career Center — A professional online resource for first-generation high school juniors and seniors exploring post-secondary career and education options.">
+  <meta name="description" content="Pathways Forward Career Center for first-generation high school students exploring post-secondary options.">
   <title>Pathways Forward Career Center | Home</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,14 +19,18 @@
           <span class="logo-sub">Career Resource Center</span>
         </div>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="framework.html">Framework</a></li>
           <li><a href="assessment.html">Assessment</a></li>
           <li><a href="explore.html">Explore</a></li>
           <li><a href="action.html">Take Action</a></li>
-          <li><a href="equity.html">Equity &amp; Access</a></li>
+          <li><a href="equity.html">Equity</a></li>
+          <li><a href="community-resources.html">Community</a></li>
           <li><a href="references.html">References</a></li>
         </ul>
       </nav>
@@ -35,23 +39,21 @@
 
   <section class="hero">
     <div class="hero-inner">
-      <h1>Your Future Starts with Informed Choices</h1>
-      <p class="hero-lead">
-        Pathways Forward is a professional online career resource center designed for <strong>first-generation high school juniors and seniors</strong> who are preparing for life after graduation. Whether you are exploring college, workforce training, military service, or still figuring things out — this site is built for you.
-      </p>
+      <h1>Plan Your Path After High School</h1>
+      <p class="hero-lead">Career resources for <strong>first-generation juniors and seniors</strong>. Explore options, build confidence, and take your next step.</p>
 
       <div class="hero-cards">
         <div class="hero-card">
-          <h3>Who This Site Is For</h3>
-          <p>Students ages 16–18, especially first-generation and underserved learners navigating post-secondary transitions without family experience to guide them.</p>
+          <h3>Who It's For</h3>
+          <p>Students ages 16-18 navigating college, training, work, or military without family experience to guide them.</p>
         </div>
         <div class="hero-card">
-          <h3>Why This Site Exists</h3>
-          <p>To provide research-informed career exploration, self-discovery tools, and actionable guidance so you can make confident, equitable decisions about your future.</p>
+          <h3>What You'll Find</h3>
+          <p>Self-assessment tools, pathway resources, action checklists, and local community support.</p>
         </div>
         <div class="hero-card">
-          <h3>How to Use This Site</h3>
-          <p>Start with the Framework to understand our approach, take an assessment, explore pathways, then use the Action Plan to take your next steps. Visit Equity &amp; Access for support resources.</p>
+          <h3>Where to Start</h3>
+          <p>Framework, then Assessment, Explore, and Take Action. Visit Community for local help.</p>
         </div>
       </div>
     </div>
@@ -59,74 +61,63 @@
 
   <main id="main-content">
     <div class="page-header">
-      <h1>Welcome to Pathways Forward</h1>
-      <p class="subtitle">A school counseling resource for career exploration and post-secondary planning</p>
+      <h1>Welcome</h1>
+      <p class="subtitle">School counseling resources for career exploration and post-secondary planning</p>
     </div>
 
     <section class="section-block">
-      <h2>Our Population &amp; Professional Context</h2>
-      <div class="card">
-        <p>Pathways Forward serves <strong>first-generation high school juniors and seniors</strong> (ages 16–18) in public secondary school settings. These students are at a critical developmental transition: moving from adolescence toward young adulthood while making decisions about education, training, and career that will shape their futures (Super, 1990).</p>
-        <p>Many first-generation students face unique challenges — limited access to college knowledge within their families, financial uncertainty, and fewer professional networks (Engle &amp; Tinto, 2008). They may also experience lower career self-efficacy, meaning they doubt their ability to succeed in certain fields (Lent et al., 2000). This site is designed within a <strong>school counseling and student affairs context</strong>, complementing the work of counselors, teachers, and community partners who support equitable post-secondary access.</p>
-      </div>
-
-      <div class="callout callout-info">
-        <h3>Developmental &amp; Transitional Needs</h3>
-        <p>At this stage, students need to develop career identity, build self-efficacy, understand available pathways, and create concrete action plans — all while managing academic demands and social-emotional growth. This site addresses those needs through theory-informed tools, curated resources, and step-by-step guidance.</p>
-      </div>
-    </section>
-
-    <section class="section-block">
-      <h2>Explore the Site</h2>
-      <p>Use the navigation below to move through each section. We recommend following the order listed, but you can jump to any area based on your current needs.</p>
-
       <div class="nav-cards">
         <a href="framework.html" class="nav-card">
-          <h2>1. Career Development Framework</h2>
-          <p>Learn how Social Cognitive Career Theory guides our approach to exploration and decision-making.</p>
+          <h2>1. Framework</h2>
+          <p>How Social Cognitive Career Theory guides this site.</p>
           <span class="arrow">View Framework →</span>
         </a>
         <a href="assessment.html" class="nav-card">
-          <h2>2. Assessment &amp; Self-Discovery</h2>
-          <p>Take the O*NET Interest Profiler and learn how to interpret your results ethically and meaningfully.</p>
-          <span class="arrow">Start Self-Discovery →</span>
+          <h2>2. Assessment</h2>
+          <p>Personality, values, and interest assessments with guidance.</p>
+          <span class="arrow">Start Assessment →</span>
         </a>
         <a href="explore.html" class="nav-card">
-          <h2>3. Career &amp; Pathway Exploration</h2>
-          <p>Browse curated resources for career clusters, education pathways, workforce options, and more.</p>
+          <h2>3. Explore</h2>
+          <p>Career clusters, college, workforce, and military resources.</p>
           <span class="arrow">Explore Pathways →</span>
         </a>
         <a href="action.html" class="nav-card">
-          <h2>4. Action-Oriented Guidance</h2>
-          <p>Follow developmental timelines, financial literacy basics, and an interactive planning checklist.</p>
+          <h2>4. Take Action</h2>
+          <p>Timelines, financial basics, and a planning checklist.</p>
           <span class="arrow">Take Action →</span>
         </a>
         <a href="equity.html" class="nav-card">
-          <h2>5. Equity &amp; Access</h2>
-          <p>Find support for financial barriers, underrepresented populations, and students still exploring direction.</p>
-          <span class="arrow">View Equity Resources →</span>
+          <h2>5. Equity</h2>
+          <p>Support for financial, cultural, and access barriers.</p>
+          <span class="arrow">View Equity →</span>
+        </a>
+        <a href="community-resources.html" class="nav-card">
+          <h2>6. Community Guide</h2>
+          <p>Local PFISD resources: food, housing, health, jobs, and more.</p>
+          <span class="arrow">View Community Guide →</span>
         </a>
         <a href="references.html" class="nav-card">
-          <h2>Research &amp; References</h2>
-          <p>View the scholarly and professional sources that inform this site's content and approach.</p>
+          <h2>References</h2>
+          <p>Research sources cited throughout this site.</p>
           <span class="arrow">View References →</span>
         </a>
       </div>
     </section>
 
     <section class="section-block">
-      <h2>Post-Secondary Pathway Overview</h2>
+      <h2>Post-Secondary Pathways</h2>
       <div class="media-container">
-        <object class="inline-svg" data="assets/pathway-map.svg" type="image/svg+xml" width="900" height="400" aria-label="Visual pathway map showing four routes after high school: four-year college, community college, workforce and certifications, and military service, plus a gap year option.">
-          <img src="assets/pathway-map.svg" alt="Visual pathway map showing four routes after high school: four-year college, community college, workforce and certifications, and military service, plus a gap year option." width="900" height="400">
+        <object class="inline-svg" data="assets/pathway-map.svg" type="image/svg+xml" width="900" height="400" aria-label="Pathway map showing four-year college, community college, workforce and certifications, military service, and gap year options.">
+          <img src="assets/pathway-map.svg" alt="Pathway map showing four-year college, community college, workforce and certifications, military service, and gap year options." width="900" height="400">
         </object>
-        <p class="media-caption">Figure 1. Original visual pathway map illustrating multiple valid post-secondary routes. No single path is "better" — the right choice depends on your goals, interests, and circumstances.</p>
+        <p class="media-caption">Multiple valid routes exist. The right path depends on your goals and circumstances.</p>
       </div>
     </section>
 
     <div class="callout callout-warning">
-      <h3>A Note from Your Counseling Team</h3>
-      <p>Career development is a lifelong process, not a one-time decision. The resources on this site are designed to <strong>expand your possibilities</strong>, not limit them. If you feel overwhelmed, start with just one section and schedule time with your school counselor. You are not alone in this journey.</p>
+      <h3>Need Help?</h3>
+      <p>Start with one section. Schedule time with your school counselor. You are not alone.</p>
     </div>
   </main>
 
@@ -134,11 +125,11 @@
     <div class="footer-inner">
       <div>
         <p><strong>Pathways Forward Career Center</strong></p>
-        <p>A professional career resource for first-generation high school students.</p>
+        <p>Career planning for first-generation high school students.</p>
       </div>
       <div>
-        <p>Questions? Contact your school counseling office.</p>
-        <p><a href="references.html">References &amp; Sources</a></p>
+        <p>Contact your school counseling office with questions.</p>
+        <p><a href="references.html">References</a></p>
       </div>
     </div>
   </footer>
